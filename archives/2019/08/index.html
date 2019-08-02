@@ -405,6 +405,30 @@
 
 
 
+    
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = '';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'OY3Oxv51vLvaD6moc90gtmET-9Nh9j0Va# Your leancloud application appid',
+    appKey: 'DAHugK8cEcFasA3w444h496I# Your leancloud application appkey',
+    placeholder: '留下你的话吧',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
 
 </body>
 </html>

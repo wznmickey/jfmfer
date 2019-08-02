@@ -57,18 +57,18 @@
   };
 </script>
 
-  <meta name="description" content="测试中。你可以在下面写上你想说的话名字、邮箱都可以空着">
+  <meta name="description" content="测试中。点开标题，看到评论区，在下面写上你想说的话吧。">
 <meta name="keywords" content="测试中">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试中">
 <meta property="og:url" content="http://yoursite.com/2019/08/02/测试中/index.html">
 <meta property="og:site_name" content="测试中">
-<meta property="og:description" content="测试中。你可以在下面写上你想说的话名字、邮箱都可以空着">
+<meta property="og:description" content="测试中。点开标题，看到评论区，在下面写上你想说的话吧。">
 <meta property="og:locale" content="zn-CN">
-<meta property="og:updated_time" content="2019-08-02T04:06:59.728Z">
+<meta property="og:updated_time" content="2019-08-02T12:05:09.976Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试中">
-<meta name="twitter:description" content="测试中。你可以在下面写上你想说的话名字、邮箱都可以空着">
+<meta name="twitter:description" content="测试中。点开标题，看到评论区，在下面写上你想说的话吧。">
   <link rel="canonical" href="http://yoursite.com/2019/08/02/测试中/">
 
 
@@ -229,7 +229,7 @@
                 
               
 
-              <time title="Erstellt: 2019-08-02 12:05:51 / Geändert am: 12:06:59" itemprop="dateCreated datePublished" datetime="2019-08-02T12:05:51+08:00">2019-08-02</time>
+              <time title="Erstellt: 2019-08-02 12:05:51 / Geändert am: 20:05:09" itemprop="dateCreated datePublished" datetime="2019-08-02T12:05:51+08:00">2019-08-02</time>
             </span>
           
             
@@ -237,6 +237,24 @@
             
           
 
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Kommentare: </span>
+    
+  
+    <a href="/2019/08/02/测试中/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/02/测试中/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
           <br>
 
         </div>
@@ -248,7 +266,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>测试中。<br>你可以在下面写上你想说的话<br>名字、邮箱都可以空着</p>
+        <p>测试中。<br>点开标题，看到评论区，在下面写上你想说的话吧。</p>
 
     </div>
 
@@ -269,6 +287,9 @@
 
           </div>
           
+    
+    <div class="comments" id="comments"></div>
+  
 
 
         </div>
@@ -411,6 +432,30 @@
 
 
 
+
+    
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = '';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'OY3Oxv51vLvaD6moc90gtmET-9Nh9j0Va# Your leancloud application appid',
+    appKey: 'DAHugK8cEcFasA3w444h496I# Your leancloud application appkey',
+    placeholder: '留下你的话吧',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
 
 
 </body>
